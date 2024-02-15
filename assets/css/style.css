@@ -198,6 +198,7 @@ ul.social-icons{
 
 .about-desc li a:hover{
     color: var(--primary-hover);
+    text-decoration: underline;
 }
 
 .about-desc li strong{
@@ -207,4 +208,63 @@ ul.social-icons{
 
 .about-desc .btn{
     margin-top: 20px;
+}
+
+/* work section */
+.work-section{
+    background-color: var(--dark-primary);
+    color: var(--white);
+    padding: 30px;
+    text-align: center;
+}
+
+.work-section h4 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.work-section h4 span{
+    color: var(--primary);
+}
+
+.design-work{
+    background-color: var(--black-primary);
+    padding: 30px;
+    max-width: 300px;
+    text-align: start;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.design-work:hover{
+    background-color: #1a1a1a;
+    transform: scale(1.1);
+}
+
+.design-work p{
+    font-size: 14px;
+    color: #a7a8a8;
+}
+
+.design-work a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.design-work_desc{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.work-icon {
+    background-color: var(--primary);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.design-work_sec {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
