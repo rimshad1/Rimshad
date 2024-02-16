@@ -297,5 +297,9 @@ ul.social-icons{
 
 .design-work-back a{
     text-decoration: none;
+    color: var(--white);
+}
+
+.design-work-back a i {
     color: var(--primary-hover);
 }
