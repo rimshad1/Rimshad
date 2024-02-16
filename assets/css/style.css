@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Poppins", sans-serif !important;
 }
@@ -335,6 +339,8 @@ ul.social-icons{
     font-family: "Poppins", sans-serif !important;
 }
 
+/* ƒooter */
+
 footer{
     background-color: var(--dark-primary);
     color: var(--white);
@@ -346,4 +352,58 @@ footer{
 footer a{
     color: var(--primary-hover);
     text-decoration: none;
+}
+
+
+/* media query */
+@media only screen and (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header * {
+        margin-bottom: 5px;
+    }
+
+    /* hero section */
+    .hero-section{
+        flex-direction: column;
+        padding: 40px 40px 0 40px;
+    }
+
+    /* about section */
+    .about-section {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .about-desc {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .about-desc h4 {
+        font-size: 32px;
+    }
+
+    /* work section */
+    .work-section {
+        padding: 30px 10px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .design-work_sec {
+        margin: 20px;
+        width: 100%;
+    }
+
+    /* contact */
+    .contact-section form input , textarea{
+        width: 100%;
+    }
 }
