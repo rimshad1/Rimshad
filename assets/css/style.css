@@ -218,6 +218,12 @@ ul.social-icons{
     text-align: center;
 }
 
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
 .work-section h4 {
     margin-bottom: 30px;
     font-size: 28px;
@@ -227,29 +233,53 @@ ul.social-icons{
     color: var(--primary);
 }
 
-.design-work{
-    background-color: var(--black-primary);
-    padding: 30px;
-    max-width: 300px;
-    text-align: start;
-    border-radius: 12px;
-    transition: all 0.5s ease;
-    cursor: pointer;
+.design-work_sec {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.card-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 .design-work:hover{
     background-color: #1a1a1a;
-    transform: scale(1.1);
 }
 
-.design-work p{
+.design-work_sec:hover .card-inner{
+    transform: rotateY(-180deg);
+}
+
+.design-work, .design-work-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 30px;
+    background-color: var(--black-primary);
+    text-align: start;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.design-work-back{
+    background-color: #1a1a1a;
+}
+
+.design-work-back{
+    transform: rotateY(180deg);
+}
+
+.design-work p, .design-work-back p{
+    padding-top: 10px;
     font-size: 14px;
     color: #a7a8a8;
-}
-
-.design-work a{
-    text-decoration: none;
-    color: var(--primary);
 }
 
 .design-work_desc{
@@ -260,11 +290,10 @@ ul.social-icons{
 .work-icon {
     background-color: var(--primary);
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
 }
 
-.design-work_sec {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+.design-work-back a{
+    text-decoration: none;
+    color: var(--primary-hover);
 }
