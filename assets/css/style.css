@@ -15,7 +15,7 @@
 }
 
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif !important;
 }
 
 /* header */
@@ -127,6 +127,7 @@ ul.social-icons{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Poppins", sans-serif !important;
 }
 
 .btn.btn-primary{
@@ -214,24 +215,23 @@ ul.social-icons{
 .work-section{
     background-color: var(--dark-primary);
     color: var(--white);
-    padding: 30px;
+    padding: 40px;
     text-align: center;
 }
 
 .work-section h4 {
-    margin-bottom: 30px;
+    margin: 30px 0;
     font-size: 28px;
 }
 
+.work-section h4 span{
+    color: var(--primary);
+}
 
 .card{
     padding: 30px;
     display: flex;
     justify-content: center;
-}
-
-.work-section h4 span{
-    color: var(--primary);
 }
 
 .design-work_sec {
@@ -268,14 +268,13 @@ ul.social-icons{
     text-align: start;
     border-radius: 12px;
     cursor: pointer;
-}
-
-.design-work-back{
-    background-color: #1a1a1a;
+    box-shadow: 0 0 2px var(--primary);
 }
 
 .design-work-back{
     transform: rotateY(180deg);
+    background-color: #1a1a1a;
+    box-shadow: 0 0 10px var(--primary);
 }
 
 .design-work p, .design-work-back p{
@@ -302,4 +301,49 @@ ul.social-icons{
 
 .design-work-back a i {
     color: var(--primary-hover);
+}
+
+
+/* Contact */
+.contact-section{
+    padding: 40px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--black-primary);
+}
+
+.contact-section h4{
+    margin: 30px 0;
+    font-size: 28px;
+}
+
+.contact-section span{
+    color: var(--primary);
+}
+
+.contact-section form input, textarea{
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 350px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--dark-primary);
+    box-shadow: 0 0 2px var(--primary-hover);
+    color: var(--white);
+    resize: none;
+    font-family: "Poppins", sans-serif !important;
+}
+
+footer{
+    background-color: var(--dark-primary);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a{
+    color: var(--primary-hover);
+    text-decoration: none;
 }
