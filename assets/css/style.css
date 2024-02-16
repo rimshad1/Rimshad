@@ -294,7 +294,7 @@ ul.social-icons{
 
 .work-icon {
     background-color: var(--primary);
-    border-radius: 50%;
+    border-radius: 50px;
     padding: 10px;
 }
 
@@ -358,7 +358,17 @@ footer a{
 /* media query */
 @media only screen and (max-width: 600px) {
 
+    * {
+        width: 100%;
+    }
+
     header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header ul{
+        margin: 10px 0;
         flex-direction: column;
     }
 
@@ -370,6 +380,14 @@ footer a{
     .hero-section{
         flex-direction: column;
         padding: 40px 40px 0 40px;
+    }
+
+    .social-icons{
+        width: 75%;
+    }
+
+    .hero-btn button {
+        margin-bottom: 10px;
     }
 
     /* about section */
@@ -400,6 +418,11 @@ footer a{
     .design-work_sec {
         margin: 20px;
         width: 100%;
+    }
+
+    .work-icon,i {
+        width: 23px;
+        text-align: center;
     }
 
     /* contact */
