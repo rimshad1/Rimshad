@@ -218,15 +218,16 @@ ul.social-icons{
     text-align: center;
 }
 
-.card{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
 .work-section h4 {
     margin-bottom: 30px;
     font-size: 28px;
+}
+
+
+.card{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .work-section h4 span{
@@ -238,6 +239,7 @@ ul.social-icons{
     width: 300px;
     height: 250px;
     perspective: 1000px;
+    margin: 0 30px;
 }
 
 .card-inner{
