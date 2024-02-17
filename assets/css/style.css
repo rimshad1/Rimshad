@@ -431,4 +431,8 @@ footer a{
     .contact-section form input , textarea{
         width: 100%;
     }
+
+    footer{
+        font-size: 12px;
+    }
 }
