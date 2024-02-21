@@ -13,10 +13,10 @@
 
 <body>
   <header>
-    <div>
+    <div class="logo1">
       <a href="./index.html"><span class="logo">RIMSHA<span>D</span></span></a>
     </div>
-    <div>
+    <div class="navbar">
       <ul>
         <li>
           <a href="./index.html">Home</a>
@@ -37,10 +37,10 @@
   <main>
     <!-- Hero  -->
     <section class="hero-section">
-      <div>
+      <div class="hero">
         <div>
           <h4 title="Hello How are you?">Hi, There!</h4>
-          <h2 class="hero-title">I'm <span>Rimshad Ahamed</span></h2>
+          <h2 class="hero-title">I'm <span class="input"></span></h2>
           <p class="hero-desc">Hello, I’m a passionate and driven web developer dedicated to crafting immersive digital
             experiences through innovative web applications. </p>
         </div>
@@ -108,7 +108,7 @@
                 <h3>UI/UX Design</h3>
                 <p>Workde on cloud Music Application and Booking and tourisum Web Pages, etc.</p>
               </div>
-              <a href="#">See My Works <i class="fa fa-arrow-right"></i></a>
+              <a href="./ui/uxworks.html">See My Works <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -185,6 +185,23 @@
     <p>Copyright &copy; 2024 | <a href="https://github.com/rimshad1" target="_blank">Rimshad
         Ahamed</a> - All Right Reserved.</p>
   </footer>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="./assets/js/script.js"></script>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed(".input", {
+      strings: ["Rimshad Ahamed", "Web Developer", "Full Stack Developer"],
+      typeSpeed: 70,
+      backSpeed: 65,
+      loop: true
+    })
+  </script>
 
 </body>
 
